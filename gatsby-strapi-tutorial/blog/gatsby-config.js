@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `My Superblog`,
+    title: `Mehdi 1K blog test gatsby + strapi`,
     description: `Gatsby blog with Strapi as a headless CMS`,
     author: `@gatsbyjs & @strapi`,
   },
@@ -17,10 +17,7 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,
-        contentTypes: [
-          `article`,
-          `user`
-        ],
+        contentTypes: [`article`, `user`],
         queryLimit: 1000,
       },
     },
@@ -40,6 +37,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
   ],
 }
